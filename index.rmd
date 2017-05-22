@@ -1,7 +1,7 @@
 ---
 title: "机器学习理论"
 author: Eng C L
-date: December 26, 2016
+date: May 26, 2017
 output:
   revealjs::revealjs_presentation:
     reveal_options:
