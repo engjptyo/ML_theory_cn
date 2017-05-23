@@ -93,11 +93,18 @@ output:
 <h3 class="fragment highlight-green">https://www.yammer.com/ericsson.com#/home | #machinelearning | @echieng</h3>
 </div>
 
-## {data-background="figs/ML_rainbow1.svg"}
+## 内容摘要 {data-background="figs/ML_rainbow1.svg"}
 
-<center href="?transition=concave#/transitions"><img src="figs/ML_toc.svg" 
-	max-height="1000px" max-width="1000px" height="700px" width="auto"
-	style="background-color:transparent; border:0px; box-shadow:none;"/></center>
+<div class='left' style='float:left;width:50%'>
+-  背景
+-  目标
+-  学习任务
+-  算法与模型
+-  机器学习的处理过程
+-  机器学习的基本要点
+-  参考
+
+</div>
 
 # 背景
 
@@ -106,11 +113,11 @@ output:
 
 <div class='left' style='float:left;width:50%'>
 - <p class="fragment highlight-blue">数据质量  </p>
-      * <h4>嘈杂的，错误的，偏见的</h4>
+      * <h4>噪声，错误，偏差</h4>
 - <p class="fragment highlight-green">特征工程</p>
       * <h4>描述输出的属性 </h4>
 - 算法选择
-      * <h4>受制于预期的产出和数据的可用性 </h4>
+      * <h4>受限于预期的输出和可用的数据 </h4>
 </div>
 <div class='right' style='float:right;width:50%'>
 - 学习  
@@ -123,11 +130,10 @@ output:
 
 
 ## 信息来源
-这个演讲..
 
 <div  class="fragment" style='float:left;width:50%'>
 
-- [机器学习简介 - 自动化自动化](https://ericoll.internal.ericsson.com/sites/Data_Vizalytics/Documents/MachineLearning/ML_workshop/ML_intro/ML_intro_PA14.pptx)
+- [机器学习简介 - 基于自动化的自动化]
 
 - 开放源码 - <img src="figs/github-logo.png" 
 	height="50px" style="background-color:transparent; border:0px; box-shadow:none;"/> <br> <img src="figs/logo-so-color.png" 
@@ -153,13 +159,14 @@ output:
 
 </div>
 
-# 目的
+# 目标
 
-## 目的 {data-background="figs/ML_five.svg"}
+
+## 目标 {data-background="figs/ML_five.svg"}
 
 <div  class="fragment" style='float:left;width:50%'>
 
-<ul><li class="fragment">了解过程</li><br>
+<ul><li class="fragment">理解机器学习的过程</li><br>
 <li class="fragment">知道数据的重要性</li><br>
 <li class="fragment">创建学习模式的过程</li><br>
 <li class="fragment">多维优化问题</li><br>
@@ -172,9 +179,9 @@ output:
 </div>
 
 
-# 概观
+# 机器学习概要
 
-## 一般原则
+## 通用过程
 
 <center><img src="figs/ML_general_process.svg" 
 	height="550px" 
@@ -182,7 +189,7 @@ output:
 	</center>
 <figcaption> <small>概要的机器学习和预测任务</small> </figcaption>
 
-## 概念
+## 机器学习概念
 
 <center><img id="myImg" src="figs/ML_learning.svg" 
 	max-height="100px" max-width="100px" height="400px" width="auto"
@@ -198,7 +205,7 @@ output:
 
 # 基本学习任务
 
-## 学习概观
+## 机器学习(ML)概要
 
 <center><img src="figs/ML_overview2.svg" 
 	max-height="850px" max-width="500px" height="auto" width="auto"
@@ -206,14 +213,14 @@ output:
 
 <figcaption> <small>学习任务分类</small> </figcaption>
 
-## 学习方法
+## 机器学习方法
 
 <br>
 
 学习方法      | 学习	
 -------------: | ------------------------------------------------------------------------
 监督    | 具有输入和预期输出的数据集 - 将输入映射到输出的目标
-无监督  | 没有已知标签的数据集 - 发现模式或结构的目标
+无监督  | 没有已知标签的数据集 - 目标是去发现模式或结构
 强化 | 系统自动尝试了解情况，从互动中学习，并为自己的目标选择最佳路径
 转让      | 通过将知识转移到已经学习的相关任务中，可以学到一个新任务
 
@@ -231,15 +238,14 @@ output:
 
 任务            | 描述
 --------------- | -----------------------------------------------------------------------------------------------------------------------
-<br> 分类  | - 多类或二进制分类  <br> - 排行 <br> - 评估分类误差或曲线下面积（AUC）
-<br> 回归      | - 预测实值回应 <br> <br>- 高斯，泊松，伽玛等分布 <br> <br> - 用均方误差进行评估  
-<br> 聚类      | - 无监督学习（无培训标签）  <br> - 数据分区; 识别群体或子群体  <br> - 用总平方和贝叶斯信息准则（BIC）评估
+<br> 分类  | - 多类或者二元分类  <br> - 排名 <br> - 评估：曲线下的分类误差或者面积area under the curve (AUC)
+<br> 回归      | - 预测一个真实值的结果 <br> <br>- 高斯(Gaussian), 泊松(Poisson), Gamma etc 分布 <br> <br> - 评估方法：均方误差  
+<br> 聚类      | - 无监督学习 (没有训练标记)  <br> - 划分数据；识别群和子群  <br> - 评估：总平方和，贝叶斯信息准则Bayesian information criterion (BIC)
 <br><br>
 </div>
 
 
-
-## 示例（二进制分类）
+## 学习任务-例子（二进制分类）
 
 <div style = "float:left; width:60%">
  
@@ -253,7 +259,7 @@ output:
 </div>
 
 
-## 示例（多级分类）
+## 学习任务 – 案例（M级分类）
 
 <img src="figs/ML_eg_mnist1.png" style="float: left; border:0px; box-shadow:none; width: 45%; margin-right: 1%; margin-bottom: 0.5em"/>
 <img src="figs/ML_eg_mnist2.gif" style="float: left; border:0px; box-shadow:none; width: 45%; margin-right: 1%; margin-bottom: 0.5em"/>
@@ -266,7 +272,7 @@ output:
 </a>
 
 
-## Artificial Intelligence Systems
+## 人工智能系统
 
 <div style = "float:left; width:65%">
  
@@ -278,7 +284,9 @@ output:
 <div style = "float:right; width:35%">
 
 <h6>- AI系统的不同部分在不同的AI学科之间相互关联</h6>
-<h6>- 蓝色框表示能够从数据中学习的组</h6>
+<h6>- 蓝色框表示能够从数据中学习的组件</h6>
+
+
 
 <small>
 <small>@unpublished{Goodfellow-et-al-2016-Book, title={Deep Learning}, author={Ian Goodfellow and Yoshua Bengio and Aaron Courville} note={Book in preparation for MIT Press}, url={http://www.deeplearningbook.org}, year={2016} } ^[Deep Learning; Ian Goodfellow and Yoshua Bengio and Aaron Courville]</small>
@@ -288,14 +296,15 @@ output:
 
 ## 人工神经网络
 
-<center><img src="figs/ML_neural_lab.svg" style="float: center; border:0px; box-shadow:none; width: 75%; margin-right: 1%; margin-bottom: 0.5em"/>
+<center><img src="figs/ML_neural_lab.svg" style="float: center; border:0px; box-shadow:none; width: 70%; margin-right: 1%; margin-bottom: 0.5em"/>
 <figcaption> <small>人工神经网络结构和术语</small> </figcaption></center>
 
+<small> 输入层, 隐藏层, 输出层, 神经网络之激活函数 </small>
 
 
 # 算法与模型
 
-## 算法
+## 算法 - 算法类别
 
 <div style = "float:left; width:99%">
  
@@ -305,7 +314,7 @@ output:
 </div>
 
 
-## 从数据学习
+## 从数据中学习
 
 <img src="figs/ML_learning_from_data.svg" style="float: left; border:0px; box-shadow:none; width: 70%; margin-right: 1%; margin-bottom: 0.5em"/><br><figcaption> <small>常规算法学习^[Yaser S. Abu-Mostafa; 加州理工学院]</small> </figcaption>
 
@@ -367,7 +376,7 @@ p2d_cla
 
 ## 算法库
 
-- 开源
+- 开源 (Open Source)
 
 - H2O.ai - Python, R
 <a href="http://www.h2o.ai/" data-preview-link>
@@ -380,19 +389,19 @@ p2d_cla
 </a>
 
 
-# 工序
+# 机器学习的处理流程
 
 ## 典型处理流程
 
 <img src="figs/ML_process.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
 <figcaption> <small>流程示例</small> </figcaption>
 
-## 大致流程
+## 通用流程
 
 <img src="figs/ML_process_general.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption> <small>大致流程 - 涉及机器学习模型创建周期的任务</small> </figcaption>
+<figcaption> <small>通用流程 - 涉及机器学习模型创建周期的任务</small> </figcaption>
 
-## 详细流程
+## 详细处理流程
 
 <img src="figs/ML_hyper.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
 
@@ -401,12 +410,12 @@ p2d_cla
 
 ## 数据
 
-- 数据采集 - 各种数据来源
+- 数据采集 - 各种数据来源开源
       * <h4>可能会组合不同来源 </h4>
-      * <h4>补充缺乏证据 </h4>
-      * <h4>更清晰的图案 </h4>
+      * <h4>完善缺失的数据 </h4>
+      * <h4>更清晰的模式 </h4>
       
-- 数据预处理 - 丢失数据，数值不一致，分布变换
+- 数据预处理 - 丢失的数据，不一致的数值，分布变换
 
 
 ## 数据源
@@ -456,16 +465,16 @@ subplot(p, plog, titleX = T, titleY = T, margin = 0.04)
  
 <div style = "float:right; width:40%">
 <h6>- 数据转换：将数学函数应用于每个数据值</h6>
-<h6>- 最常见的数据转换是单个变量的中心和缩放</h6>
+<h6>- 最常见的数据转换是单个变量的聚集和幅度变化</h6>
 <h6>- 每个数据值首先按平均值减去，然后除以标准偏差</h6>
-<h6>- 效益是使数值程序更容易使用和更稳定</h6>
+<h6>- 好处是更容易使用和更稳定</h6>
 <h6>- 主要缺点是数据变得难以解释</h6>
-<h6>- 简单功能;  $x^k$, $\sqrt{x}$, $\log(x)$, $e^x$, $\Vert x \Vert$ </h6>
+<h6>- 简单函数;  $x^k$, $\sqrt{x}$, $\log(x)$, $e^x$, $\Vert x \Vert$ </h6>
 
 </div>
 
 
-# 机器学习具体细节
+# 机器学习的基本要点
 
 ## 要完成的任务
 
@@ -477,7 +486,8 @@ subplot(p, plog, titleX = T, titleY = T, margin = 0.04)
 
 - 模型超参数优化  
 
-- 性能指标
+- 性能评估
+
 
 ## 模型预测误差 
 
@@ -491,11 +501,11 @@ subplot(p, plog, titleX = T, titleY = T, margin = 0.04)
 <div style = "float:right; width:40%">
 <small>
 
-- 想象一下，目标的中心是一个可以预测正确值的模型
+- 想象一下，目标的中心是一个完美预测正确值的模型
 
 - 重复我们的整个模型构建过程，以获得目标上的一些单独的命中
 
-- 了解不同的错误来源如何导致偏差和差异有助于我们改进数据拟合过程，从而产生更准确的模型
+- 了解不同的错误来源，以及如何导致偏差和方差，将有助于我们改进数据拟合过程，从而产生更准确的模型
 
 归功于: Scott Fortmann-Roe,
 http://scott.fortmann-roe.com/docs/BiasVariance.htm^[Scott Fortmann-Roe,
@@ -518,23 +528,23 @@ $$\hat{\mathbf{\theta}}_m = g(x_{1}, ... , x_{m})$$
 
 $$Bias(\hat{\mathbf{\theta}}_m) =  {\mathbb{E}\left[\hat{\mathbf{\theta}}_m\right]} - \mathbf{\theta}$$
 
-- 我们期望与功能的真实值的差异
+- 我们希望的值和函数输出的真实值之间的差异
 
 <small><small> Refer to Deep Learning; Ian Goodfellow, Yashua Bengio, and Aaron Courvill; chapter 5.4</small></small>
 </div>
  
 <div style = "float:right; width:50%">
 
-- 预测器的方差被定义为
+- 一个预测器的方差被定义为
 $$\mathrm{Var}[\hat{\theta}_m] = \sigma^{2} = \frac{\sum_{i=1}^{m} 
   \left(x_{i} - \bar{x}\right)^{2}}
   {m}$$
 
-- 我们期望它作为数据样本的函数而有所不同
+- 我们希望 作为数据样本的函数变化多少？
 
-- 使用交叉验证来协商这种权衡
+- 通过交叉验证能得到一种平衡。
 
-- 或者使用均方误差（MSE）
+- 或者使用均方误差（MSE）来评估
 
 $$MSE = Bias(\hat{\mathbf{\theta}}_m)^2 + \mathrm{Var}[\hat{\theta}_m] $$
 
@@ -649,7 +659,7 @@ p2d_cla
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> - 给定一定数量的数据，模型参数控制模型过度配套，最佳服装或装备 </h6>
+<h6> - 给定一定数量的参数，模型参数控制过拟合，最优匹配，欠拟合 </h6>
 
 </div>
 
@@ -790,10 +800,9 @@ p5
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> 从左上角开始, <br><br>(a) 原始数据   <br><br>(b) 装备不足[高偏差]   <br><br>(c) 最适合   <br><br>(d) 过度拟合[高差异] </h6>
+<h6> 从左上角开始, <br><br>(a) 原始数据   <br><br>(b) 欠拟合[高偏差]   <br><br>(c) 最适合   <br><br>(d) 过度拟合[高差异] </h6>
 
 </div>
-
 
 ## 模型预测错误5
 
@@ -806,32 +815,33 @@ p5a
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> - 对于8，相同的多项式，顶部过度拟合，底部 - 恰好与更多的数据 </h6>
-<h6> - 额外的倾向于推广模型</h6>
+<h6> - 对于同样的8阶多项式 </h6>
+<h6> - （a）上图显示过拟合 <br> （b）下图通过更多的数据显示，下图是更加通用的模型</h6>
+
 
 </div>
 
 ## 模型预测错误6
 
 <div style = "float:left; width:50%">
-- **偏差** - 是由于学习算法中的错误或过度简单的假设造成的错误
+- **偏差** - 是由于学习算法中的错误或过度简化的假设造成的错误
 
-- 导致模型适合您的数据   
+- 导致模型对于数据是欠拟合
 
-- 使其难以具有高预测精度  
+- 使其难以有高预测精度  
 
-- 很难将您的知识从训练集推广到测试
+- 很难将知识从训练集推广到测试集
 </div>
  
 <div style = "float:right; width:50%">
 
-- **差异** - 是由于学习算法过于复杂的错误
+- **差异** - 是由于学习算法过于复杂导致
 
-- 导致该算法对您的训练数据的高度变化非常敏感  
+- 导致该算法对训练数据的变化非常敏感
 
-- 导致您的模型超载数据  
+- 导致模型对于数据而言过拟合
 
-- 对您的模型的训练数据带来太多噪音，对您的测试数据非常有用
+- 模型的训练数据携带太多噪声，对测试数据来说变得没有用
 
 </div>
 
@@ -904,7 +914,7 @@ p5a
 <small>$$r = \frac{TP}{\left(TP + FN \right)}$$</small>
 
 
-<h6 align = left>- 准确性,</h6>  
+<h6 align = left>- 准确,</h6>  
 
 <small>$$acc = \frac{\left(TP + TN\right)}{\left(TP + TN + FP + FN \right)}$$</small>
 
@@ -929,9 +939,9 @@ p5a
  
 <div style = "float:right; width:20%">
 
-<h6>- 对于修复数据量，培训和交叉评估的典型错误各不相同</h6>
+<h6>- 对于一定数据量，训练和交叉评估的典型错误各不相同</h6>
 
-<h6>- 如果数据是高偏差 - 更复杂的模型会降低误差如果数据高方差 - 更复杂的模型将会更多地减少错误（由于过度拟合），并且使用验证数据，性能不会很好</h6>
+<h6>- 如果数据是高偏差 - 更复杂的模型会降低误差如果数据高方差 - 更复杂的模型将会更多地错误（由于过度拟合），并且使用验证数据，性能不会很好</h6>
 
 </div>
 
@@ -945,9 +955,9 @@ p5a
 - 随机森林:
       * <h4>树木数量，树木深度，采样率等<h4>
 - 梯度升压机（GBM）:
-      * <h4>树木数量，树木深度，学习率，采样率等<h4>
+      * <h4>树的数量，树的深度，学习速率，采样率等<h4>
 - 深度学习:
-      * <h4>激活，隐层数，隐层大小，L1，L2，辍学率等<h4>
+      * <h4>激活函数，隐藏层数，隐藏层大小，L1，L2，退出率等<h4>
 
 
 </div>
@@ -1292,7 +1302,8 @@ p3d
 
 
 
-# 概要
+# 机器学习的概要
+
 
 ## 重点
 
