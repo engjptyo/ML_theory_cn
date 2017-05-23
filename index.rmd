@@ -88,7 +88,8 @@ output:
 </div>
  
 <div style = "float:right; width:50%">
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<h3 class="fragment highlight-green">"Chinese translation | Bo Guan</h3>
 <h3 class="fragment highlight-green">"`r Sys.Date()`" | C. L. Eng</h3>
 <h3 class="fragment highlight-green">https://www.yammer.com/ericsson.com#/home | #machinelearning | @echieng</h3>
 </div>
@@ -183,7 +184,7 @@ output:
 
 ## 通用过程
 
-<center><img src="figs/ML_general_process.svg" 
+<center><img src="figs/ML_general_process_cn.svg" 
 	height="550px" 
 	style="background-color:transparent; border:0px; box-shadow:none;"/>
 	</center>
@@ -191,7 +192,7 @@ output:
 
 ## 机器学习概念
 
-<center><img id="myImg" src="figs/ML_learning.svg" 
+<center><img id="myImg" src="figs/ML_learning_cn.svg" 
 	max-height="100px" max-width="100px" height="400px" width="auto"
 	style="background-color:transparent; border:0px; box-shadow:none;"/></center>
 
@@ -200,7 +201,7 @@ output:
 <h3><center> 自动化 </center></h3>
 <center> 机器学习从数据推导出规则 </center>
 
-<center> (内含的编程) </center>
+<center> (自动化，隐式编程) </center>
 	
 
 # 基本学习任务
@@ -245,7 +246,7 @@ output:
 </div>
 
 
-## 学习任务-例子（二进制分类）
+## 学习任务（二进制分类）
 
 <div style = "float:left; width:60%">
  
@@ -393,24 +394,24 @@ p2d_cla
 
 ## 典型处理流程
 
-<img src="figs/ML_process.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
+<img src="figs/ML_process_cn.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
 <figcaption> <small>流程示例</small> </figcaption>
 
 ## 通用流程
 
-<img src="figs/ML_process_general.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
+<img src="figs/ML_process_general_cn.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
 <figcaption> <small>通用流程 - 涉及机器学习模型创建周期的任务</small> </figcaption>
 
 ## 详细处理流程
 
-<img src="figs/ML_hyper.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
+<img src="figs/ML_hyper_cn.svg" style="float: left; border:0px; box-shadow:none; width: 90%; margin-right: 1%; margin-bottom: 0.5em"/>
 
 <figcaption> <small>细节学习过程</small> </figcaption>
 <small>credit: Sabastian Raschka 2014 CC Creative Common Attributions^[Sabastian Raschka 2014 CC Creative Common Attributions] </small>
 
 ## 数据
 
-- 数据采集 - 各种数据来源开源
+- 数据采集 - 各种数据来源开源
       * <h4>可能会组合不同来源 </h4>
       * <h4>完善缺失的数据 </h4>
       * <h4>更清晰的模式 </h4>
@@ -1334,15 +1335,15 @@ p3d
 </div>
 
 
-## 困难 (重述)
+## 困难(重述)
 
 <div class='left' style='float:left;width:50%'>
 - <p class="fragment highlight-blue">数据质量  </p>
-      * <h4>嘈杂的，错误的，偏见的</h4>
+      * <h4>噪声，错误，偏差</h4>
 - <p class="fragment highlight-green">特征工程</p>
       * <h4>描述输出的属性 </h4>
 - 算法选择
-      * <h4>受制于预期的产出和数据的可用性 </h4>
+      * <h4>受限于预期的输出和可用的数据 </h4>
 </div>
 <div class='right' style='float:right;width:50%'>
 - 学习  
