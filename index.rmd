@@ -96,16 +96,9 @@ output:
 
 ## 内容摘要 {data-background="figs/ML_rainbow1.svg"}
 
-<div class='left' style='float:left;width:50%'>
--  背景
--  目标
--  学习任务
--  算法与模型
--  机器学习的处理过程
--  机器学习的基本要点
--  参考
-
-</div>
+<center href="?transition=concave#/transitions"><img src="figs/ML_toc_cn.svg" 
+	max-height="1000px" max-width="1000px" height="700px" width="auto"
+	style="background-color:transparent; border:0px; box-shadow:none;"/></center>
 
 # 背景
 
