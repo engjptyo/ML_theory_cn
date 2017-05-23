@@ -182,7 +182,7 @@ output:
 	</center>
 <figcaption> <small>概要的机器学习和预测任务</small> </figcaption>
 
-## Concept
+## 概念
 
 <center><img id="myImg" src="figs/ML_learning.svg" 
 	max-height="100px" max-width="100px" height="400px" width="auto"
@@ -198,7 +198,7 @@ output:
 
 # 基本学习任务
 
-## 概观
+## 学习概观
 
 <center><img src="figs/ML_overview2.svg" 
 	max-height="850px" max-width="500px" height="auto" width="auto"
@@ -504,7 +504,7 @@ http://scott.fortmann-roe.com/docs/BiasVariance.htm]
 </small>
 </div>
 
-## 模型预测误差 2
+## 模型预测误差2
 
 <div style = "float:left; width:50%">
 - 偏差和方差测度在预测器中有2个不同的误差源。
@@ -541,7 +541,7 @@ $$MSE = Bias(\hat{\mathbf{\theta}}_m)^2 + \mathrm{Var}[\hat{\theta}_m] $$
 
 </div>
 
-## Model Prediction Error 3
+## 模型预测错误3
 
 ```{r echo = FALSE, error = FALSE, message = FALSE, warning = FALSE}
 
@@ -644,20 +644,18 @@ p2d_cla <- plot_ly(hoverinfo = 'all') %>%
 p2d_cla
 ```
 
-<small>Assessing Model Bias and Variance</small>
+<small>评估模型偏差和方差</small>
 
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> - given a fix amount of data, model parameters govern model overfit, bestfit or underfit </h6>
+<h6> - 给定一定数量的数据，模型参数控制模型过度配套，最佳服装或装备 </h6>
 
 </div>
 
 
 
-
-
-## Model Prediction Error 4
+## 模型预测错误4
 
 ```{r echo = FALSE, error = FALSE, message = FALSE, warning = FALSE}
 
@@ -792,12 +790,12 @@ p5
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> clock-wise from top-left, <br><br>(a) raw data   <br><br>(b) underfitting [high bias]   <br><br>(c) best fitting   <br><br>(d) overfitting [high variance] </h6>
+<h6> 从左上角开始, <br><br>(a) 原始数据   <br><br>(b) 装备不足[高偏差]   <br><br>(c) 最适合   <br><br>(d) 过度拟合[高差异] </h6>
 
 </div>
 
 
-## Model Prediction error 5
+## 模型预测错误5
 
 <div style = "float:left; width:85%">
  
@@ -808,59 +806,59 @@ p5a
 </div>
  
 <div style = "float:right; width: 15%">
-<h6> for the same polynomial of 8, top - overfitting, bottom - just right with more data </h6>
-<h6> additional tends to generalize the model</h6>
+<h6> - 对于8，相同的多项式，顶部过度拟合，底部 - 恰好与更多的数据 </h6>
+<h6> - 额外的倾向于推广模型</h6>
 
 </div>
 
-## Model Prediction Error 6
+## 模型预测错误6
 
 <div style = "float:left; width:50%">
-- **Bias** - is an error due to erroneous or overly simplistic assumptions in the learning algorithm
+- **偏差** - 是由于学习算法中的错误或过度简单的假设造成的错误
 
-- cause  the model underfitting your data, 
+- 导致模型适合您的数据   
 
-- making it hard for it to have high predictive accuracy 
+- 使其难以具有高预测精度  
 
-- hard to generalize your knowledge from the training set to the test set
+- 很难将您的知识从训练集推广到测试
 </div>
  
 <div style = "float:right; width:50%">
 
-- **Variance** - is error due to excessive complexity in the learning algorithm
+- **差异** - 是由于学习算法过于复杂的错误
 
-- cause the algorithm being highly sensitive to high degrees of variation in your training data  
+- 导致该算法对您的训练数据的高度变化非常敏感  
 
-- cause your model to overfit the data  
+- 导致您的模型超载数据  
 
-- carrying too much noise from your training data for your model to be very useful for your test data
+- 对您的模型的训练数据带来太多噪音，对您的测试数据非常有用
 
 </div>
 
-## Confusion Matrix (Classification)
+## 混淆矩阵（分类）
 
 <div style = "float:left; width:60%">
  
 <img src="figs/ML_conf_matrix.svg" style="float: left; border:0px; box-shadow:none; width: 98%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption><small>Confusion matrix for classfication model</small></figcaption>
+<figcaption><small>用于分类模型的混淆矩阵</small></figcaption>
 
 </div>
  
 <div style = "float:right; width:40%">
-<h6>Example: Classify Spam** Email</h6>
+<h6>示例：分类垃圾邮件** 电子邮件</h6>
 
-<h6>- TP: Messages that have been blocked by the anti-spam filters and match the definition of spam</h6>
+<h6>- TP: 已被反垃圾邮件过滤器阻止并符合垃圾邮件定义的邮件</h6>
 
-<h6>- FP: Legitimate message mistakenly marked as spam</h6>  
+<h6>- FP: 合法邮件错误地标记为垃圾邮</h6>  
 
-<h6>- TN: Legitimate message is correctly marked as legitimate message</h6>  
+<h6>- TN: 合法消息被正确标记为合法消息</h6>  
 
-<h6>- FN: Spam is mistakenly marked as legitimate message</h6>
+<h6>- FN: 垃圾邮件被错误地标记为合法信息</h6>
 
-<small><small>** unsolicited bulk email</small> </small>
+<small><small>** 未经请求的批量电子邮件</small> </small>
 
 
-## Confusion Matrix (Explain)
+## 混淆矩阵（说明）
 
 <div style = "float:left; width:50%">
  
@@ -872,20 +870,20 @@ p5a
 <div style = "float:right; width:50%">
 
 
-<h6>Example: Classify Spam** Email</h6>
+<h6>示例：分类垃圾邮件** 电子邮件</h6>
 
-<h6>- TP: Messages that have been blocked by the anti-spam filters and match the definition of spam</h6>
+<h6>- TP: 已被反垃圾邮件过滤器阻止并符合垃圾邮件定义的邮件</h6>
 
-<h6>- FP: Legitimate message mistakenly marked as spam</h6>  
+<h6>- FP: 合法邮件错误地标记为垃圾邮</h6>  
 
-<h6>- TN: Legitimate message is correctly marked as legitimate message</h6>  
+<h6>- TN: 合法消息被正确标记为合法消息</h6>  
 
-<h6>- FN: Spam is mistakenly marked as legitimate message</h6>
+<h6>- FN: 垃圾邮件被错误地标记为合法信息</h6>
 
-<small><small>** unsolicited bulk email</small> </small>
+<small><small>** 未经请求的批量电子邮件</small> </small>
 
 
-## Precision & Recall (Classification)
+## 精密 和 召回（分类）
 
 <div style = "float:left; width:60%">
  
@@ -896,22 +894,22 @@ p5a
  
 <div style = "float:right; width:40%">
 
-<h6 align = left>- Precision,</h6>  
+<h6 align = left>- 精确,</h6>  
 <small>$p = \frac{True\ Positive}{Predicted\ Positive}$</small><br>
 <small>$$p = \frac{TP}{\left(TP + FP \right)}$$</small>
 
 
-<h6 align = left>- Recall,</h6>  
+<h6 align = left>- 召回,</h6>  
 <small>$p = \frac{True\ Positive}{Actual\ Positive}$</small><br>
 <small>$$r = \frac{TP}{\left(TP + FN \right)}$$</small>
 
 
-<h6 align = left>- Accuracy,</h6>  
+<h6 align = left>- 准确性,</h6>  
 
 <small>$$acc = \frac{\left(TP + TN\right)}{\left(TP + TN + FP + FN \right)}$$</small>
 
 
-<h6 align = left>- F-measure,</h6>  
+<h6 align = left>- F-措施,</h6>  
 
 <small>$$F = \frac{2}{\left(\frac{1}{p} + \frac{1}{r} \right)}$$</small>
 
@@ -920,7 +918,7 @@ p5a
 </div>
 
 
-## Strategy to Improve Model (Traing, cross-validation)
+## 改进模式的策略（训练，交叉验证）
 
 <div style = "float:left; width:80%">
  
@@ -931,26 +929,26 @@ p5a
  
 <div style = "float:right; width:20%">
 
-<h6>- For a fix amount of data, the typical error for both training and cross-valiation varies</h6>
+<h6>- 对于修复数据量，培训和交叉评估的典型错误各不相同</h6>
 
-<h6>- If data is high bias - more complex model will reduce the error
-If data is high variance - more complex model will reduce error more (due to overfitting), and with validation data, it will not performance well</h6>
+<h6>- 如果数据是高偏差 - 更复杂的模型会降低误差如果数据高方差 - 更复杂的模型将会更多地减少错误（由于过度拟合），并且使用验证数据，性能不会很好</h6>
 
 </div>
 
 
-## Hyper-Parameter Optimisation
+## 超参数优化
 
 <div style = "float:left; width:70%">
  
-Example of hyper-parameters
+超参数示例
 
-- Random Forest:
-      * <h4>No. of trees, depth of trees, sample rate, etc<h4>
-- Gradient Boosting Machine (GBM):
-      * <h4>No. of trees, depth of trees, learning rate, sample rate, etc<h4>
-- Deep Learning:
-      * <h4>Activation, No. of hidden layers, hidden layer size, L1, L2, dropout ratios, etc<h4>
+- 随机森林:
+      * <h4>树木数量，树木深度，采样率等<h4>
+- 梯度升压机（GBM）:
+      * <h4>树木数量，树木深度，学习率，采样率等<h4>
+- 深度学习:
+      * <h4>激活，隐层数，隐层大小，L1，L2，辍学率等<h4>
+
 
 </div>
  
@@ -959,7 +957,7 @@ Example of hyper-parameters
 </div>
 
 
-## Optimisation Technique
+## 优化技术
 
 <div style = "float:left; width:60%">
  
@@ -968,18 +966,18 @@ Example of hyper-parameters
  
 <div style = "float:right; width:40%">
 
-<h6>- Manual search
-    * insight into hyper-parameter response function
-    * no technical overhead or barrier  </h6>
+<h6>- 手动搜索
+    * 洞察超参数响应函数
+    * 没有技术开销或障碍  </h6>
   
-<h6>- Grid search
-     * simple to implement
-     * reliable in low dimensional spaces  </h6>
+<h6>- 网格搜索
+     * 执行简单
+     * 在低维空间可靠  </h6>
 
-<h6>- Random search </h6>
+<h6>- 随机搜索 </h6>
 
 
-<small> Figure 1: Grid and random search of nine trials for optimizing a function f(x, y) = g(x) + h(y) = g(x) with low effective dimensionality. Above each square g(x) is shown in green, and left of each square h(y) is shown in yellow. With grid search, nine trials only test g(x)in three distinct places. With random search, all nine trials explore distinct values of g. This failure of grid search is the rule rather than the exception in high dimensional hyper-parameter optimization.</small>
+<small> 图1：用于优化函数f（x，y）= g（x）+ h（y）= g（x）的九个试验的网格和随机搜索，具有低有效维数。 在每个方格g（x）之上，以绿色显示，并且每个正方形h（y）的左侧以黄色显示。 通过网格搜索，九个试验仅在三个不同的地方测试g（x）。 随机搜索，所有九个试验探索不同的g值。 网格搜索的这种失败是高维超参数优化中的规则而不是异常。</small>
 
 <small> http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf^[Random Search for Hyper-Parameter Optimization; http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf] </small>
 
@@ -990,7 +988,7 @@ Example of hyper-parameters
 
 
 
-## Activation Function
+## 激活功能
 
 ```{r echo = FALSE, error = FALSE, message = FALSE, warning = FALSE}
 
@@ -1057,26 +1055,27 @@ p2 <- plot_ly(data, x = ~x, y = ~y1, name = 'Tanh', type = 'scatter', mode = 'li
 p2
 ```
 
-<small> Neuron Activation Function </small>
+<small> 激活功能 </small>
 
 
-## Model performance matrices (error)
+## 模型性能矩阵（误差）
 
 <div style = "float:left; width:95%">
  
 <img src="figs/ML_error_flow.svg" style="float: left; border:0px; box-shadow:none; width: 99%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption><small>Model performance matrices - error analysis flow</small></figcaption>
+<figcaption><small>模型性能矩阵 - 误差分析流程</small></figcaption>
 
 </div>
  
 <div style = "float:right; width:5%">
 <small>
-<small>credit: Baidu's Andrew Ng's Nuts and Bolts of Deep Learning^[Baidu's Andrew Ng's Nuts and Bolts of Deep Learning]</small>
+<small>
+归功于：百度的Andrew Ng的机器学习具体细节^[百度的Andrew Ng的机器学习具体细节]</small>
 </small>
 </div>
 
 
-## Debug
+## 调试
 
 ```{r echo = FALSE, error = FALSE, message = FALSE, warning = FALSE}
 
@@ -1137,14 +1136,17 @@ p2d
  
 <div style = "float:right; width:10%">
 <small>
-<h6>- relatively 'hard' problem </h6>
-<h6>- creativity, experimentation and tenacity </h6>
-<h6>- difficulty involves building an intuition </h6>
-<h6>- algorithm or implementation </h6></small>
+<h6>- 相对困难的问题 </h6>
+<h6>- 创造力，实验和韧性 </h6>
+<h6>- 困难包括建立直觉 </h6>
+<h6>- 算法或实现 </h6></small>
+
+
+
 </div>
 
 
-## Debug 3D Problem
+## 调试3D问题
 
 ```{r echo = FALSE, error = FALSE, message = FALSE, warning = FALSE}
 
@@ -1205,9 +1207,10 @@ p3d
  
 <div style = "float:right; width:20%">
 <small>
-- exponentially diffiult debugging <br><br>
-- algoritm or implementation or hyper-parameter<br><br>
-- 3D: Implementation, Algorithm, Model<br><br>
+- 指数差错调试 <br><br>
+- 算法或实现或超参数<br><br>
+- 3D：实现，算法，模型<br><br>
+
 
 <small>http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html</small>
 
@@ -1219,7 +1222,7 @@ p3d
 </div>
 
 
-## Machine Debug 1
+## 机器调试 - 1
 
 <div style = "float:left; width:70%">
 
@@ -1229,19 +1232,20 @@ p3d
  
 <div style = "float:right; width:30%">
 
-<h6> Implementation and Algorithm </h6>
+<h6> 实现与算法 </h6>
 
-<h6>- relatively 'hard' problem </h6>
-<h6>- creativity, experimentation and tenacity </h6>
-<h6>- difficulty involves building an intuition </h6>
-<h6>- algorithm or implementation </h6>
+<h6>- 相对困难的问题 </h6>
+<h6>- 创造力，实验和韧性 </h6>
+<h6>- 困难包括建立直觉 </h6>
+<h6>- 算法或实现 </h6>
 
 <small>http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html</small>
+
 </div>
 
 
 
-## Machine Debug 2
+## 机器调试 - 2
 
 <div style = "float:left; width:80%">
 
@@ -1251,23 +1255,23 @@ p3d
  
 <div style = "float:right; width:20%">
 
-<h6> Implementation, Algorithm and Model </h6>
+<h6> 实现，算法和模型 </h6>
 
-<h6>- Exponentially Difficult Debugging </h6>
-<h6>- Algorithm or Implementation or Hyper-parameter </h6>
+<h6>- 指数困难的调试 </h6>
+<h6>- 算法或实现或超参数 </h6>
 
 
 <small>http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html</small>
 </div>
 
 
-## Machine Debug 3
+## 机器调试 - 3
 
 <img src="figs/ML_why_difficult3.svg" style="float: left; border:0px; box-shadow:none; width: 85%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption><small>Implementation, Algorithm, Model and Data</small></figcaption>
+<figcaption><small>实现，算法，模型和数据</small></figcaption>
 <small>http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html</small>
 
-## Use case speedtest prediction
+## 用例速度预测
 
 <div style = "float:left; width:60%">
  
@@ -1275,11 +1279,12 @@ p3d
 </div>
  
 <div style = "float:right; width:40%">
-<h6> Building user experience prediction based on network statistical counter data</h6>
+<h6> 基于网络统计计数器数据建立用户体验预测</h6>
 
-<h6>- Open data: MIC operator benchmark data </h6>
-<h6>- Operator data: eNodeB statistical counter </h6>
-<h6>- Operator data: network topology and configuration</h6>
+<h6>- 开放数据：政府机关运营商基准数据 </h6>
+<h6>- 运营商数据：eNodeB统计计数器 </h6>
+<h6>- 运营商数据：网络拓扑和配置</h6>
+
 </div>
 
 
@@ -1289,16 +1294,16 @@ p3d
 
 # 概要
 
-## Big Picture
+## 重点
 
 
 <img src="figs/ML_systems.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption> <small>Machine Learning systems - the supporting components play a major role</small> </figcaption>
+<figcaption> <small>机器学习系统 - 辅助组件起主要作用</small> </figcaption>
 
-<small> Hidden Technical Debt in Machine Learning Systems, NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf^[Hidden Technical Debt in Machine Learning Systems, NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf]</small>
+<small> 机器学习系统隐藏的技术债务，NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf^[Hidden 机器学习系统隐藏的技术债务，NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf]</small>
 
 
-## Key Takeaways
+## 关键
 
 
 <div style = "float:left; width:60%">
@@ -1308,33 +1313,33 @@ p3d
 </div>
  
 <div style = "float:right; width:40%">
-- know your data
-- be resourceful on open data
-- algorithm selection depends on the task objective
-- hypothesis and evaluation criteria
-- techniques to address model overfitting/underfitting
-- hyper-parameter search & optimisation
-- requires getting a lot of little details right
+- 知道你的数据
+- 对开放数据充满信心
+- 算法选择取决于任务目标
+- 假设和评估标准
+- 解决模型过拟合/不合适的技术
+- 超参数搜索和优化
+- 需要获得很多细节
 </div>
 
 
-## the Difficulty (Recap)
+## 困难 (重述)
 
 <div class='left' style='float:left;width:50%'>
-- <p class="fragment highlight-blue">Quality of data</p>
-      * <h4>Noisy, erronous, bias </h4>
-- <p class="fragment highlight-green">Feature engineering</p>
-      * <h4>attributes that describes the output well </h4>
-- Algorithm selection
-      * <h4>subject to expected output and data availability </h4>
+- <p class="fragment highlight-blue">数据质量  </p>
+      * <h4>嘈杂的，错误的，偏见的</h4>
+- <p class="fragment highlight-green">特征工程</p>
+      * <h4>描述输出的属性 </h4>
+- 算法选择
+      * <h4>受制于预期的产出和数据的可用性 </h4>
 </div>
 <div class='right' style='float:right;width:50%'>
-- Learning  
-      * <h4>time and infrastructure </h4> 
-- Model complexity  
-      * <h4>accuracy, time, & complexity </h4>
-- Hyper-parameter  
-      * <h4>iterative search to find the optimum parameters </h4>
+- 学习  
+      * <h4>时间和基础设施 </h4> 
+- 模型复杂性  
+      * <h4>准确性，时间和复杂性 </h4>
+- 超参数 
+      * <h4>迭代搜索找到最优参数 </h4>
 </div>
 
 
