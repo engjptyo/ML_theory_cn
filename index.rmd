@@ -829,7 +829,7 @@ p5a
  
 <div style = "float:right; width:50%">
 
-- **差异** - 是由于学习算法过于复杂导致
+- **方差** - 是由于学习算法过于复杂导致
 
 - 导致该算法对训练数据的变化非常敏感
 
@@ -1211,7 +1211,7 @@ p3d
  
 <div style = "float:right; width:20%">
 <small>
-- 指数差错调试 <br><br>
+- Debug 难度指数性增加<br><br>
 - 算法或实现或超参数<br><br>
 - 3D：实现，算法，模型<br><br>
 
@@ -1259,9 +1259,9 @@ p3d
  
 <div style = "float:right; width:20%">
 
-<h6> 实现，算法和模型 </h6>
+<h6> 实现，算法，模型三个维度： </h6>
 
-<h6>- 指数困难的调试 </h6>
+<h6>- Debug 难度指数性增加 </h6>
 <h6>- 算法或实现或超参数 </h6>
 
 
@@ -1285,7 +1285,7 @@ p3d
 <div style = "float:right; width:40%">
 <h6> 基于网络统计计数器数据建立用户体验预测</h6>
 
-<h6>- 开放数据：政府机关运营商基准数据 </h6>
+<h6>- 开放数据：运营商基准数据 (Speedtest) </h6>
 <h6>- 运营商数据：eNodeB统计计数器 </h6>
 <h6>- 运营商数据：网络拓扑和配置</h6>
 
@@ -1303,9 +1303,10 @@ p3d
 
 
 <img src="figs/ML_systems.svg" style="float: left; border:0px; box-shadow:none; width: 95%; margin-right: 1%; margin-bottom: 0.5em"/>
-<figcaption> <small>机器学习系统 - 辅助组件起主要作用</small> </figcaption>
+<figcaption> <small>现实世界中机器学习代码(ML Code) 仅仅占很小比重，需要大量周围部件的支撑
+</small> </figcaption>
 
-<small> 机器学习系统隐藏的技术债务，NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf^[Hidden 机器学习系统隐藏的技术债务，NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf]</small>
+<small> Hidden Technical Debt in Machine Learning Systems, NIPS 2015 – Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf^[Hidden 机器学习系统隐藏的技术债务，NIPS 2015 - Google; https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf]</small>
 
 
 ## 关键
@@ -1318,11 +1319,11 @@ p3d
 </div>
  
 <div style = "float:right; width:40%">
-- 知道你的数据
+- 理解你的数据
 - 对开放数据充满信心
 - 算法选择取决于任务目标
 - 假设和评估标准
-- 解决模型过拟合/不合适的技术
+- 解决模型过拟合/欠拟合 
 - 超参数搜索和优化
 - 需要获得很多细节
 </div>
